@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        /* Your CSS styles remain unchanged */
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="header">
+            <h1>Student Portfolio</h1>
+        </div>
+        <div class="profile-content">
+            <h2>Varsha Rao</h2>
+            
+            <h2>About Me</h2>
+            <p>I am a B.Tech undergrad student at UVCE. My branch is AI-ML.</p>
+
+            <!-- Contact Information -->
+            <button onclick="toggleVisibility('contactInfo')">Show Contact Info</button>
+            <div id="contactInfo" class="hidden">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> varsharao2005@gmail.com</p>
+                <p><strong>Phone:</strong> 8329028459</p>
+                <p><strong>Instagram: @click.pics.321  @u.no.varsha</strong></p>
+            </div>
+
+            <!-- Activities -->
+            <button onclick="toggleVisibility('activities')">Show Activities</button>
+            <div id="activities" class="hidden">
+                <h2>Activities</h2>
+                <p>Part of Marvel Batch 4</p>
+                <P>Member of TEDxUVCE</P>
+                <P>Participated in Kagada 2k23 Poster Presentation</P>
+                <p>Pursuing a Udemy course in Python</p>
+            </div>
+
+            <!-- Interests -->
+            <button onclick="toggleVisibility('interests')">Show Interests</button>
+            <div id="interests" class="hidden">
+                <h2>Interests</h2>
+                <p>Writing</p>
+                <p>Photography</p>
+                <p>Listening to music</p>
+                <p>Reading</p>
+                <p>Technology and innovation</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleVisibility(elementId) {
+            var element = document.getElementById(elementId);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
